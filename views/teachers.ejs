@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Teachers</title>
+</head>
+<body class=" light-blue accent-4">
+        <% include ./nav.ejs %>
+
+    <div  style="width:1000px;  margin:0 auto; " >
+        <h1>Enter Teacher name</h1>
+        <form action="/teacher" method="POST">
+            <label for="teacher" class="black-text" style="font-size:50px">Teacher Name</label>
+            <input id="teacher" name="teacher" type="text" style="width:1000px" placeholder="Enter here" required/>
+          <a href="/listofstudents"> <button type="submit" class="btn-large red"> Submit </button></a> 
+        </form>
+    </div>
+</body>
+</html>

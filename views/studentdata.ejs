@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Document</title>
+</head>
+<body class="light-blue accent-4">
+    <% include ./nav.ejs %>
+    <!-- <h1 class="container center" > Data of <%= data.student_name %></h1> -->
+
+    <div class="container">
+        <ul class=" collection">
+            <div class="container">
+            <li class="collection-item">
+            <h4 > Student Name:<%= data.student_name  %></h4>   
+            </li>
+
+            <li class="collection-item ">
+               <h4>Student USN <%= data.Student_USN  %></h4>
+            </li>
+
+            <li class="collection-item">
+               <h4> Attendence Status<%= data.attendence_status  %></h4>
+            </li>
+
+            <li class="collection-item">
+               <h4> BackLogs<%= data.backlogs  %></h4>
+            </li>
+
+            <li class="collection-item">
+                 <h4>Current CGPA <%= data.current_cgpa %></h4>  
+            </li>
+            <li class="collection-item">
+                    <h4> Semester 1 SGPA<%=data.sem_wise_sgpa.sem1  %></h4>
+            </li>
+
+                <li class="collection-item"><h4>Semester 2 SGPA
+                <%=data.sem_wise_sgpa.sem2  %></h4> 
+            </li>
+            <li class="collection-item"> <h4>Semester 3 SGPA
+                    <%=data.sem_wise_sgpa.sem3  %></h4>
+            </li>
+            <li class="collection-item"> <h4>Semester 4 SGPA
+                <%=data.sem_wise_sgpa.sem4  %></h4>
+            </li>
+                
+            <li class="collection-item"> <h4>Semester 5 SGPA
+                <%=data.sem_wise_sgpa.sem5  %></h4>
+            </li>
+            <li class="collection-item"><h4> Semester 6 SGPA
+                <%=data.sem_wise_sgpa.sem6  %></h4>
+            </li>
+            <li class="collection-item"><h4> Semester 7 SGPA
+                <%=data.sem_wise_sgpa.sem7  %></h4>
+            </li>
+            <li class="collection-item"><h4> Semestere 8 SGPA
+                    <%=data.sem_wise_sgpa.sem8  %></h4>
+                </li>
+            </div>
+
+
+            
+        </ul>
+    </div>
+</body>
+</html>

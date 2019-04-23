@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>New Student</title>
+    <style>
+        .entries{
+            margin-top:30px;
+            margin-bottom:30px;
+
+        }
+        .lables{
+            font-size :30px;
+            color:black
+        }
+        .text-entries{
+            width: 20px
+        }
+    </style>
+</head>
+<body class="light-blue accent-4">
+    <% include ./nav.ejs %>
+    <form action="/newstudent" method="POST">
+        <div class="container entries">
+        <label for="proctor_name" class="lables">Proctor Name</label>
+        <input type="text" name="proctor_name" id="proctor_name" class="text-entries" required/>
+            <br/>
+        
+            <label for="student_name" class="lables">Stundet Name</label>
+        <input type="text" name="student_name" id="student_name" required/>
+            <br/>
+        <label for="student_usn" class="lables">Student USN</label>
+        <input type="text" name="student_usn" id="student_usn" required/>
+        <br/>
+        <label for="attendence" class="lables">Attendence percentage</label>
+        <input type="text" name="attendence" id="attendence"/>
+        <br/>
+        <label for="current_cgpa" class="lables">current_cgpa</label>
+        <input type="text" name="current_cgpa" id="current_cgpa"/>
+        <br/>
+        <label for="backlogs" class="lables">backlogs</label>
+        <input type="text" name="backlogs" id="backlogs"/>
+        <br/>
+        <label for="sem1_sgpa" class="lables">sem1 Sgpa </label>
+        <input type="text" name="sem1_sgpa" id="sem1_sgpa"/>
+        <br/>
+        <label for="sem2_sgpa" class="lables">sem2 Sgpa</label>
+        <input type="text" name="sem2_sgpa" id="sem2_sgpa"/>
+        <br/>
+        <label for="sem3_sgpa" class="lables">sem3 Sgpa</label>
+        <input type="text" name="sem3_sgpa" id="sem3_sgpa"/>
+        <br/>
+        <label for="sem4_sgpa" class="lables">sem4 Sgpa</label>
+        <input type="text" name="sem4_sgpa" id="sem4_sgpa"/>
+        <br/>
+        <label for="sem5_sgpa" class="lables">sem5 Sgpa</label>
+        <input type="text" name="sem5_sgpa" id="sem5_sgpa"/>
+        <br/>
+        <label for="sem6_sgpa" class="lables">sem6 Sgpa</label>
+        <input type="text" name="sem6_sgpa" id="sem6_sgpa"/>
+        <br/>
+        <label for="sem7_sgpa" class="lables"> sem7 Sgpa</label>
+        <input type="text" name="sem7_sgpa" id="sem7_sgpa"/>
+        <br/>
+        <label for="sem8_sgpa" class="lables">sem8 Sgpa </label>
+        <input type="text" name="sem8_sgpa" id="sem8_sgpa"/>
+        <br/>
+        <button type="submit" class="btn red">Submit </button>
+    </div>
+    </form>
+    
+</body>
+</html>

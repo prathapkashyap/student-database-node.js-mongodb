@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>List of students</title>
+</head>
+<body class="light-blue accent-4">
+        <% include ./nav.ejs %>
+
+    <h1 class="container">List of students under
+        <%= (teacher)%>
+    </h1>
+    <ul class=" container collection" style="margin-top:30px">
+    <% students.forEach(function(student){ %>
+        <li class="collection-item" style="font-size:40px;">
+        <form action="/showstudent" method="POST">
+        <a href="/showstudent/<%= student %>" >
+        <p id="studentdata" name="studentdata"><%= student %></p>
+        </a>
+        </li>
+    </form>
+    <% }) %>
+</ul>
+<div class="container" style="margin-bottom:75px">
+    <h1  > Add new </h1>
+    <a href="/newstudent"><button class="btn-large red">Add New Student</button></a>
+</div>
+</body>
+</html>
