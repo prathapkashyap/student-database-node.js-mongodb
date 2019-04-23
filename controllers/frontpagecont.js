@@ -37,7 +37,7 @@ module.exports=function(app){
             }
             else{
                 console.log('teacher does not exist');
-                res.send('does not exist')
+                res.render('error',{message:'requested data does not exist '})
             }  
         })
 
@@ -57,7 +57,8 @@ module.exports=function(app){
             res.render('studentdata',{data:data[0]})
             }
             else{
-                res.send('student usn not found')
+                res.render('error',{message:'requested data does not exist '})
+
             }
         })
         
